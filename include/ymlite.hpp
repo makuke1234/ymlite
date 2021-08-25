@@ -157,7 +157,7 @@ namespace ymlite
 		{
 			return *static_cast<stringT *>(static_cast<void *>(&this->ndata));
 		}
-		inline stringT const & get_cString() const noexcept
+		inline stringT const & get_String() const noexcept
 		{
 			return *static_cast<const stringT *>(static_cast<const void *>(&this->ndata));
 		}
@@ -165,7 +165,7 @@ namespace ymlite
 		{
 			return *static_cast<numberT *>(static_cast<void *>(&this->ndata));
 		}
-		inline numberT const & get_cNumber() const noexcept
+		inline numberT const & get_Number() const noexcept
 		{
 			return *static_cast<const numberT *>(static_cast<const void *>(&this->ndata));
 		}
@@ -173,7 +173,7 @@ namespace ymlite
 		{
 			return *static_cast<boolT *>(static_cast<void *>(&this->ndata));
 		}
-		inline boolT const & get_cBool() const noexcept
+		inline boolT const & get_Bool() const noexcept
 		{
 			return *static_cast<const boolT *>(static_cast<const void *>(&this->ndata));
 		}
@@ -181,7 +181,7 @@ namespace ymlite
 		{
 			return *static_cast<arrayT *>(static_cast<void *>(&this->ndata));
 		}
-		inline arrayT const & get_cArray() const noexcept
+		inline arrayT const & get_Array() const noexcept
 		{
 			return *static_cast<const arrayT *>(static_cast<const void *>(&this->ndata));
 		}
@@ -189,7 +189,7 @@ namespace ymlite
 		{
 			return *static_cast<objectT *>(static_cast<void *>(&this->ndata));
 		}
-		inline objectT const & get_cObject() const noexcept
+		inline objectT const & get_Object() const noexcept
 		{
 			return *static_cast<const objectT *>(static_cast<const void *>(&this->ndata));
 		}
@@ -251,19 +251,19 @@ namespace ymlite
 		switch (this->role)
 		{
 		case datatype::String:
-			this->make_String(other.get_cString());
+			this->make_String(other.get_String());
 			break;
 		case datatype::Number:
-			this->get_Number() = other.get_cNumber();
+			this->get_Number() = other.get_Number();
 			break;
 		case datatype::Boolean:
-			this->get_Bool() = other.get_cBool();
+			this->get_Bool() = other.get_Bool();
 			break;
 		case datatype::Array:
-			this->make_Array(other.get_cArray());
+			this->make_Array(other.get_Array());
 			break;
 		case datatype::Object:
-			this->make_Object(other.get_cObject());
+			this->make_Object(other.get_Object());
 			break;
 		}
 	}
@@ -281,19 +281,19 @@ namespace ymlite
 		switch (this->role)
 		{
 		case datatype::String:
-			this->make_String(other.get_cString());
+			this->make_String(other.get_String());
 			break;
 		case datatype::Number:
-			this->get_Number() = other.get_cNumber();
+			this->get_Number() = other.get_Number();
 			break;
 		case datatype::Boolean:
-			this->get_Bool() = other.get_cBool();
+			this->get_Bool() = other.get_Bool();
 			break;
 		case datatype::Array:
-			this->make_Array(other.get_cArray());
+			this->make_Array(other.get_Array());
 			break;
 		case datatype::Object:
-			this->make_Object(other.get_cObject());
+			this->make_Object(other.get_Object());
 			break;
 		}
 		return *this;
