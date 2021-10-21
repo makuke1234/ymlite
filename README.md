@@ -1,5 +1,7 @@
 # ymlite
+
 ![Release version](https://img.shields.io/badge/alpha-v0.1.0-red.svg)
+![C++ version](https://img.shields.io/badge/version-C++11-blue.svg)
 
 A light-weight single-include C++ YAML library, relying on KISS (Keep It Stupid Simple)
 convention and C++11 STL (similar to my other library jsonlite).
