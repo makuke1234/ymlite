@@ -5,7 +5,7 @@
 [![wakatime](https://wakatime.com/badge/github/makuke1234/ymlite.svg)](https://wakatime.com/badge/github/makuke1234/ymlite)
 
 A light-weight single-include C++ YAML library, relying on KISS (Keep It Stupid Simple)
-convention and C++11 STL (similar to my other library jsonlite).
+convention and C++11 STL (similar to my other library jsonlite). This library is very much work in progress!
 
 
 # Overview
